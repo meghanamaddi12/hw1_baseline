@@ -1,5 +1,4 @@
 
-
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
@@ -7,21 +6,45 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List; 
 
+/**
+ * The ExpenseTrackerView class represents the graphical user interface (GUI) for the Expense Tracker.
+ * It provides input fields, buttons, and displays transactions.
+ */
+
 public class ExpenseTrackerView extends JFrame {
 
+  /** Table to display transactions. */
   private JTable transactionsTable;
+
+  /** The button for adding transactions. */
   private JButton addTransactionBtn;
-  private JTextField amountField;
+
+  /** Input field for entering transaction amount.*/
+  private JTextField amountField
+;
+  /** Input field for transaction category. */
   private JTextField categoryField;
+
+  /** Table model for storing transaction data. */
   private DefaultTableModel model;
+
+  /** List to store transactions. */
   private List<Transaction> transactions = new ArrayList<>();
 
-  
+ 
+/**
+ * Retrieves the transactions table.
+ * @return The JTable displaying transactions.
+ */ 
 
   public JTable getTransactionsTable() {
     return transactionsTable;
   }
-
+  
+  /**
+   * Retrieves the entered amount from the input field.
+   * @return The transaction amount as a double.
+   */
   public double getAmountField() {
     if(amountField.getText().isEmpty()) {
       return 0;
@@ -31,24 +54,51 @@ public class ExpenseTrackerView extends JFrame {
     }
   }
 
+/**
+ * Sets the amount input field.
+ * @param amountField The JTextField for entering the amount.
+ */
   public void setAmountField(JTextField amountField) {
     this.amountField = amountField;
   }
+
+/**
+ * Retrieves the entered category from the input field.
+ * @return The transaction category as a string.
+ */
 
   public String getCategoryField() {
     return categoryField.getText();
   }
 
+/**
+ * Sets the category input field.
+ * @param categoryField The JTextField for entering the category.
+ */
   public void setCategoryField(JTextField categoryField) {
     this.categoryField = categoryField;
   }
 
+/**
+ * Retrieves the button for adding transactions.
+ * @return The JButton used to add transactions.
+ */
   public JButton getAddTransactionBtn() {
     return addTransactionBtn;
   }
+
+/**
+ * Retrieves the table model for transactions.
+ * @return The DefaultTableModel storing transaction data.
+ */
   public DefaultTableModel getTableModel() {
     return model;
   }
+
+  /**
+   * Initializes the ExpenseTrackerView with a default table model.
+   * @param model The table model used to store transaction data.
+   */
 
   public ExpenseTrackerView(DefaultTableModel model) {
     setTitle("Expense Tracker"); // Set title
@@ -88,6 +138,10 @@ public class ExpenseTrackerView extends JFrame {
   
   }
 
+/**
+ * Refreshes the table with new transaction data.
+ * @param transactions The updated list of transactions.
+ */
   public void refreshTable(List<Transaction> transactions) {
       // model.setRowCount(0);
       model.setRowCount(0);
@@ -110,6 +164,9 @@ public class ExpenseTrackerView extends JFrame {
   
     }  
 
+/**
+ * Refreshes the transaction table.
+ */
   public void refresh() {
 
     // Get transactions from model
@@ -120,9 +177,19 @@ public class ExpenseTrackerView extends JFrame {
   
   }
 
+
+/**
+ * Retrieves the list of transactions stored in the tracker.
+ * @return A list of transactions.
+ */
   public List<Transaction> getTransactions() {
     return transactions;
   }
+
+/**
+ * Adds a transaction to the table and updates the UI.
+ * @param t The transaction to be added.
+ */
   
   public void addTransaction(Transaction t) {
     transactions.add(t);

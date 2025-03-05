@@ -1,9 +1,27 @@
+
+
 import javax.swing.table.DefaultTableModel;
 
 /**
  * The ExpenseTrackerApp class allows users to add/remove daily transactions.
+ * It creates the main components and starts the UI.
+ *
+ * @author Meghana Maddipatla
  */
+
+
 public class ExpenseTrackerApp {
+    /**
+     * Default constructor for the ExpenseTrackerApp class.
+     * Initializes the application and its components.
+     */
+    public ExpenseTrackerApp() {
+        // Default constructor
+    }
+     /**
+      * The entry point of the application.
+      * @param args Command line arguments.
+      */
 
   public static void main(String[] args) {
     
@@ -22,7 +40,7 @@ public class ExpenseTrackerApp {
     view.setVisible(true);
 
     // Handle add transaction button clicks
-    view.getAddTransactionBtn().addActionListener(e -> {
+    view.getAddTransactionBtn().addActionListener(_ -> {
       
       // Get transaction data from view
       double amount = view.getAmountField(); 

@@ -1,0 +1,41 @@
+commit a669062c8b074eb5b8ae6d74ae91f3eaee0be63f
+Author: meghanamaddi12 <meghanamaddi@umass.edu>
+Date:   Wed Mar 5 18:32:14 2025 -0600
+
+    Part3 outline screenshot pdf added
+
+commit 70e55d6ace0ff879c6be67f88b07821eeca9e378
+Author: meghanamaddi12 <meghanamaddi@umass.edu>
+Date:   Wed Mar 5 00:21:34 2025 -0500
+
+    Added Input Validation
+
+commit 58ec68132cab926a7c95ee6670b1fa85517054d8
+Author: meghanamaddi12 <meghanamaddi@umass.edu>
+Date:   Tue Mar 4 23:58:07 2025 -0500
+
+    Added jdoc files
+
+commit 56221be9e1140c63e05900652f76509a03ed73c6
+Author: meghanamaddi12 <meghanamaddi@umass.edu>
+Date:   Tue Mar 4 23:37:49 2025 -0500
+
+    Readme Updated
+
+commit 47580b0ed8694917cc0233827d78c78f13bf48d9
+Author: Meghana <meghanamaddi@umass.edu>
+Date:   Tue Mar 4 22:13:25 2025 -0600
+
+    Moved all the java files to a folder
+
+commit 70afc8bae4d5041c908d9dea0a976ca123a9d19d
+Author: Meghana <meghanamaddi@umass.edu>
+Date:   Tue Mar 4 22:11:42 2025 -0600
+
+    Comments Added
+
+commit b686d757db33e87fc8655c462c6e9784a0add775
+Author: Meghana <meghanamaddi@umass.edu>
+Date:   Tue Mar 4 22:10:30 2025 -0600
+
+    Initial Commit: Code Environment Setup
